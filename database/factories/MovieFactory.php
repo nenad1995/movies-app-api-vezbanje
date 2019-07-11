@@ -23,6 +23,6 @@ $factory->define(Movie::class, function (Faker $faker) {
         'imageUrl' => $faker->imageUrl(),
         'duration' => $faker->numberBetween($min = 60, $max = 200),
         'releaseDate' => $faker->date($format = 'Y-m-d', $max = 'now'),
-        'genre' => $values->random(2)
+        'genre' => $values->random(1)
     ];
 });
